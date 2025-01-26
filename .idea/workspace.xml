@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc597dae-7bc3-4aaf-aa4a-6071562c8c5b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/_neoflex_bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/_neoflex_bot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_ingestion/ingest_rubq.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_ingestion/ingest_rubq.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_ingestion/ingest_rubq_paragraphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_ingestion/ingest_rubq_paragraphs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_ingestion/ingest_rubq_second.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_ingestion/ingest_rubq_second.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/llm_service/test_local_llm.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/llm_service/test_local_llm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rag_chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rag_chatbot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rag_chatbot_langgraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rag_chatbot_langgraph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/description.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
