@@ -1,0 +1,14 @@
+langchain
+langgraph
+duckduckgo-search
+requests
+qdrant-client
+
+chromadb
+
+uvicorn
+fastapi
+duckduckgo-search
+langgraph.agents
+langchain_openai
+langchain_community

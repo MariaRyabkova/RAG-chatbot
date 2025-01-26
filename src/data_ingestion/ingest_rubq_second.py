@@ -15,25 +15,21 @@ def ingest_rubq_second(json_path, db_path, limit=50):
     if not os.path.exists(db_path):
         os.makedirs(db_path)
 
-    client = chromadb.PersistentClient(
-        path=db_path
-    )
+    client = chromadb.PersistentClient(path=db_path)
+    print("Клиент Chroma инициализирован.")
 
-    # Создаём отдельную коллекцию для второй модели
     collection = client.get_or_create_collection("rubq_qa_model2")
 
     # Лёгкая русскоязычная модель
-    #model = SentenceTransformer("cointegrated/rubert-tiny2")
-    model = SentenceTransformer("sentence-transformers/distiluse-base-multilingual-cased-v2")
+    model = SentenceTransformer("cointegrated/rubert-tiny2")
+    # model = SentenceTransformer("sentence-transformers/paraphrase-MiniLM-L6-v2")
 
-    # Читаем JSON
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     if limit and len(data) > limit:
         data = data[:limit]
 
-    # Индексируем
     for i, item in enumerate(data):
         uid = item.get("uid", f"item_{i}")
         question = item.get("question_text", "")
@@ -89,7 +85,7 @@ def test_search_second(collection, model, query: str, top_k=3):
 if __name__ == "__main__":
     JSON_FILE = "D:/_neoflex_bot/data/rubq/RuBQ_2.0_dev.json"
     DB_PATH = "D:/_neoflex_bot/data/chroma_db"
-    LIMIT = 50
+    LIMIT = None
 
     collection2, model2 = ingest_rubq_second(JSON_FILE, DB_PATH, LIMIT)
     test_query = "Где находится Париж?"
